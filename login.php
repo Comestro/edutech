@@ -4,57 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page | eduNet.com </title>
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body class="bg-light">
-    <div class="container wrapper d-flex align-items-center ">
+    <div class="container wrapper d-flex align-items-center flex-column justify-content-center">
         <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 d-flex flex-column justify-content-center">
                 <img src="assets/images/logo_large.png" width="80%" alt="">
-                <p class="fw-medium h5">EduNet is Educational Network helps you connect and share with the Students & teacher.</p>
+                <p class="fw-medium h4 w-75">EduNet is Educational Network helps you connect and share with the Students & teacher.</p>
             </div>
             <div class="col-lg-5">
-                <div class="bg-white card">
-                    <div class="card-body">
+                <div class="bg-white card rounded">
+                    <div class="card-body px-5 py-3">
+                        <h2 class="text-theme h5 text-capitalize">Login Here</h2>
+                        <hr/>
                         <form action="" method="post">
                             <div class="row">
                                 <div class="mb-3 col">
-                                    <label for="" class="small text-muted">First Name</label>
-                                    <input type="text" name="firstname" placeholder="e.g Anil" class="form-control rounded-0">
-                                </div>
-                                <div class="mb-3 col">
-                                    <label for="" class="small text-muted">Last Name</label>
-                                    <input type="text" name="lastname" placeholder="e.g Kumar" class="form-control rounded-0">
+                                    <label for="" class="small text-muted">Email</label>
+                                    <input type="email" name="email" placeholder="e.g anil@mail.com" class="form-control rounded-0">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="mb-3 col">
-                                    <label for="" class="small text-muted">Day</label>
-                                    <select name="day" id="" class="form-select rounded-0">
-                                        <option value="">Select Day</option>
-                                    </select>
+                                    <label for="" class="small text-muted">Password</label>
+                                    <input type="password" name="password" placeholder="e.g write stronge Password" class="form-control rounded-0">
                                 </div>
-                                <div class="mb-3 col">
-                                    <label for="" class="small text-muted">month</label>
-                                    <select name="month" id="" class="form-select rounded-0">
-                                        <option value="">Select Month</option>
-                                    </select>
+                            </div>
+                            <div class="row">
+                                <div class="mb-3 col px-5">
+                                    <input type="submit" name="login_account"  value="Login Now" class="btn btn-theme rounded-lg btn-lg w-100">
                                 </div>
-                                <div class="mb-3 col">
-                                    <label for="" class="small text-muted">Year</label>
-                                    <select name="" id="" class="form-select rounded-0">
-                                        <option value="">Select year</option>
-                                    </select>
-                                </div>
+                            </div>
+
+                            <hr/>
+                            <div class="d-flex justify-content-center">
+                                <a href="signup.php" class="small">Create New Account</a>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <?php include("includes/footer.php");?>
     </div>
 
 

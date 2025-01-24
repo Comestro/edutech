@@ -1,0 +1,11 @@
+:root{
+    --bg-theme:#e77813;
+}
+
+.btn-theme{
+    background-color: var(--bg-theme)!important;
+    color: white !important;
+}
+.text-theme{
+    color: var(--bg-theme)!important;
+}
