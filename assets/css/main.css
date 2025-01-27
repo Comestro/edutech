@@ -9,3 +9,7 @@
 .text-theme{
     color: var(--bg-theme)!important;
 }
+
+.h-full{
+    height: 100vh!important;
+}

@@ -22,7 +22,7 @@
                     <div class="card-body px-5 py-3">
                         <h2 class="text-theme h5 text-capitalize">Create 100% free Account</h2>
                         <hr/>
-                        <form action="" method="post">
+                        <form action="actions/signup_action.php" method="post">
                             <div class="row">
                                 <div class="mb-3 col">
                                     <label for="" class="small text-muted">First Name</label>
@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="mb-3 col">
                                     <label for="" class="small text-muted">Year</label>
-                                    <select name="" id="" class="form-select rounded-0">
+                                    <select name="year" id="" class="form-select rounded-0">
                                         <option value="">year</option>
                                         <?php 
                                             $current = date("Y");
@@ -75,9 +75,9 @@
                                     <label for="" class="small text-muted">Gender</label>
                                     <select name="gender" id="" class="form-select rounded-0">
                                         <option value="">Select Gender</option>
-                                        <option value="">Male</option>
-                                        <option value="">female</option>
-                                        <option value="">other</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">female</option>
+                                        <option value="other">other</option>
                                     </select>
                                 </div>
                             

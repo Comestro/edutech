@@ -22,7 +22,7 @@
                     <div class="card-body px-5 py-3">
                         <h2 class="text-theme h5 text-capitalize">Login Here</h2>
                         <hr/>
-                        <form action="" method="post">
+                        <form action="actions/login_action.php" method="post">
                             <div class="row">
                                 <div class="mb-3 col">
                                     <label for="" class="small text-muted">Email</label>
